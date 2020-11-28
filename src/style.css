@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: bordex-box;
+}
+
+a {
+  color: #1a35ced0;
+  text-decoration: unset;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+button,
+input[type='submit'] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 1em 0;
+}
+
+/* General */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page{
+  padding: 1rem;
+}
+
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+/* header */
+
+#header {
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #158528;
+  display: flex;
+}
+
+#header .title{
+  margin: 0;
+  padding: 0 1rem;
+  color: #ffff;
+  font-size: 2rem;
+}
+
+#header .auth-options{
+  height: 100%;
+  display: flex;
+}
+
+#header .auth-options button {
+  padding: 0 1rem;
+  background-color: #0c5718;
+  color: white;
+  font-size: 0.9rem;
+}
+
+#header .auth-options button:hover {
+  background-color: #23b93c;
+} 
+
+/* form */
+
+.form label,
+.form input {
+  display: block;
+}
+
+.form input {
+  margin-bottom: 1rem;
+}
+.form label {
+  margin-bottom: 0.2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 98%;
+  padding: 0.3rem;
+  border: 1px solid #8d8d8d;
+  border-radius: 6px;
+  background-color: #d8d4d4;
+  font-size: 1.1rem;
+}
+.form input:focus {
+  border: 1px solid #2785d1;
+  box-shadow: inset 0px 0px 5px rgba(51, 154, 238, 0.5);
+  outline: none;
+}
+
+.form input[type= "submit"]{
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #0a4714;
+  border-radius: 6px;
+  background-color: #a1ee9e;
+  font-size: 1.4rem;
+  margin: auto;
+}
+
+td, th{
+  text-align: center;
+}
+/* search */
+
+#search_div{
+  padding: 1rem;
+}
+
+#reload{
+  margin: 1rem;
+}
+
+/* error notice */
+
+.error-notice{
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #c21717;
+  border-radius: 6px;
+  background-color: #e48a8a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.error-notice button {
+  background-color: #770404;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+/* Materialize */
+.auth-options{
+  background-color: none;
+  width: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 550px){
+  #header .title{
+    font-size: 1.2rem;
+  }
+  #header .auth-options button{
+    padding: 0 0.5rem;
+    font-size: 1rem;
+  }
+}
